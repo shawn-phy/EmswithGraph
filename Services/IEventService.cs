@@ -1,6 +1,7 @@
-﻿namespace EmswithGraph.Services
+﻿using EmswithGraph.Models;
+
+public interface IEventService
 {
-    public class IEventService
-    {
+    List<Event> GetEvents();
+    int SaveEvent(Event event);
     }
-}

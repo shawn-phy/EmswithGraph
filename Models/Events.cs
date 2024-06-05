@@ -7,6 +7,6 @@ namespace EmswithGraph.Models
         public int EventId { get; set; }
         public string Name { get; set; }
         public DateTime Date { get; set; }
-        public List<Attendees> Attendees { get; set; }
+        public List<Attendees>? Attendees { get; set; }
     }
 }
