@@ -1,10 +1,12 @@
-﻿
+﻿using EmswithGraph.Models;
 
-
-public class Events
+namespace EmswithGraph.Models
 {
-    public int EventId { get; set; }
-    public string Name { get; set; }
-    public DateTime Date { get; set; }
-    public List<Attendee> Attendees { get; set; }
+    public class Events
+    {
+        public int EventId { get; set; }
+        public string Name { get; set; }
+        public DateTime Date { get; set; }
+        public List<Attendees> Attendees { get; set; }
+    }
 }
