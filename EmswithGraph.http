@@ -1,0 +1,6 @@
+@EmswithGraph_HostAddress = http://localhost:5294
+
+GET {{EmswithGraph_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

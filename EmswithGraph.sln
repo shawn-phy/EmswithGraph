@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.34909.67
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmswithGraph", "EmswithGraph.csproj", "{09911DDA-88ED-4FC6-8059-75989B1D2EC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09911DDA-88ED-4FC6-8059-75989B1D2EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09911DDA-88ED-4FC6-8059-75989B1D2EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09911DDA-88ED-4FC6-8059-75989B1D2EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09911DDA-88ED-4FC6-8059-75989B1D2EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6956C65-13DC-4A26-9298-DD624F2AF700}
+	EndGlobalSection
+EndGlobal
