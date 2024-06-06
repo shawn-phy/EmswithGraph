@@ -1,7 +1,10 @@
-﻿using EmswithGraph.Models;
+﻿using System.Collections.Generic;
 
 public interface IEventService
 {
     List<Event> GetEvents();
-    int SaveEvent(Event event);
-    }
+    Event GetEvent(int id);
+    int AddEvent(Event newEvent);
+    int UpdateEvent(Event updatedEvent);
+    int DeleteEvent(int id);
+}
