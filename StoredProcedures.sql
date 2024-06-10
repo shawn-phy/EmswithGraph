@@ -78,3 +78,64 @@ BEGIN
     VALUES (@FirstName, @LastName, @Email, @Phone, @RegistrationDate, @EventId);
 END
 GO
+
+CREATE PROCEDURE spAddAttendee
+    @FirstName VARCHAR(255),
+    @LastName VARCHAR(255),
+    @Email VARCHAR(255),
+    @Phone VARCHAR(50),
+    @RegistrationDate DATE,
+    @EventId INT
+AS
+BEGIN
+    INSERT INTO Attendees (FirstName, LastName, Email, Phone, RegistrationDate, EventId)
+    VALUES (@FirstName, @LastName, @Email, @Phone, @RegistrationDate, @EventId);
+END
+GO
+
+CREATE PROCEDURE spUpdateAttendee
+    @AttendeeId INT,
+    @FirstName VARCHAR(255),
+    @LastName VARCHAR(255),
+    @Email VARCHAR(255),
+    @Phone VARCHAR(50),
+    @RegistrationDate DATE,
+    @EventId INT
+AS
+BEGIN
+    UPDATE Attendees
+    SET FirstName = @FirstName,
+        LastName = @LastName,
+        Email = @Email,
+        Phone = @Phone,
+        RegistrationDate = @RegistrationDate,
+        EventId = @EventId
+    WHERE AttendeeId = @AttendeeId;
+END
+GO
+
+CREATE PROCEDURE spDeleteAttendee
+    @AttendeeId INT
+AS
+BEGIN
+    DELETE FROM Attendees WHERE AttendeeId = @AttendeeId;
+END
+GO
+
+CREATE PROCEDURE spGetAttendee
+    @AttendeeId INT
+AS
+BEGIN
+    SELECT a.AttendeeId, a.FirstName, a.LastName, a.Email, a.Phone, a.RegistrationDate, a.EventId
+    FROM Attendees a
+    WHERE a.AttendeeId = @AttendeeId;
+END
+GO
+
+CREATE PROCEDURE spGetAttendees
+AS
+BEGIN
+    SELECT a.AttendeeId, a.FirstName, a.LastName, a.Email, a.Phone, a.RegistrationDate, a.EventId
+    FROM Attendees a;
+END
+GO

@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddSingleton<IEventService, EventService>();
+builder.Services.AddSingleton<IAttendeeService, AttendeeService>();
 
 
 
